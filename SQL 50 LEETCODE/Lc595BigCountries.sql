@@ -1,11 +1,5 @@
 -- 595. Big Countries
--- Solved
--- Easy
--- Topics
--- premium lock icon
--- Companies
--- SQL Schema
--- Pandas Schema
+
 -- Table: World
 
 -- +-------------+---------+
