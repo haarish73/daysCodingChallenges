@@ -172,20 +172,20 @@ mysql> select c.customer_name, COUNT(o.order_id) AS total_orders
 
 
 
-Q4. Find total amount spent by each customer
+-- Q4. Find total amount spent by each customer
 
-Return:
+-- Return:
 
-customer_name
-total_spent
+-- customer_name
+-- total_spent
 
-Include 0 for customers with no orders.
+-- Include 0 for customers with no orders.
 
-👉 Use:
+-- 👉 Use:
 
-SUM()
-COALESCE()
-LEFT JOIN
+-- SUM()
+-- COALESCE()
+-- LEFT JOIN
 
 select c.customer_name, COALESCE(SUM(o.amount), 0) as total_spent
 From customer c JOIN orders 
