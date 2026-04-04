@@ -138,3 +138,100 @@ mysql> SELECT c.customer_id, c.customer_name
 -- |           5 | Aman          |
 -- +-------------+---------------+
 
+-- Q3. Count total orders placed by each customer
+
+-- Return:
+
+-- customer_name
+-- total_orders
+
+-- 👉 Use:
+
+-- LEFT JOIN
+-- COUNT
+-- GROUP BY
+
+solutions : 
+
+mysql> select c.customer_name, COUNT(o.order_id) AS total_orders
+    -> FROM Customers c
+    -> LEFT JOIN orders o
+    -> ON c.customer_id = o.customer_id
+    -> GROUP BY c.customer_name;
+
+
+-- +---------------+--------------+
+-- | customer_name | total_orders |
+-- +---------------+--------------+
+-- | Harish        |            2 |
+-- | Rahul         |            0 |
+-- | Priya         |            1 |
+-- | Sneha         |            2 |
+-- | Aman          |            0 |
+-- +---------------+--------------+
+
+
+
+Q4. Find total amount spent by each customer
+
+Return:
+
+customer_name
+total_spent
+
+Include 0 for customers with no orders.
+
+👉 Use:
+
+SUM()
+COALESCE()
+LEFT JOIN
+
+
+
+
+
+🟡 Q5. Find the customer who spent the highest total amount
+
+Return:
+
+customer_name
+total_spent
+
+👉 Use:
+
+JOIN
+GROUP BY
+ORDER BY DESC
+LIMIT 1
+
+
+
+Q6. Find customers who purchased more than 1 product
+
+Return:
+
+customer_name
+total_orders
+
+👉 Use:
+
+GROUP BY
+HAVING COUNT(*) > 1
+
+Interviewers LOVE this.
+
+
+
+
+
+🧠 Bonus Hard Question (Self Practice)
+Q7. Find products bought by Harish but not by Sneha
+
+This teaches:
+
+subquery
+joins
+filtering logic
+
+Excellent coding round level.
