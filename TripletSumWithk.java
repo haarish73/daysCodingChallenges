@@ -47,4 +47,4 @@ static boolean findTriple(int arr[], int n, int k){
 }
 
 
-ye dekh aaisa karna tha
+

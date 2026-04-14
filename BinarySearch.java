@@ -46,10 +46,10 @@
 
 public class BinarySearch {
     static int binarySearch(int arr[], int key){
-        int n = arr.length;
+        // int n = arr.length;
 
         int start = 0;
-        int end = n-1;
+        int end = arr.length-1;
 
         // int mid = start + (end - start)/2;
 
