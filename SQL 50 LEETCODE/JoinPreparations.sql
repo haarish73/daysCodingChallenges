@@ -245,13 +245,3 @@ Interviewers LOVE this.
 
 
 
-🧠 Bonus Hard Question (Self Practice)
-Q7. Find products bought by Harish but not by Sneha
-
-This teaches:
-
-subquery
-joins
-filtering logic
-
-Excellent coding round level.
