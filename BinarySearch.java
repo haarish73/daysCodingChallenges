@@ -1,4 +1,4 @@
-// 📌 Description
+
 
 // This project implements the Binary Search algorithm in Java to efficiently find the index of a target element in a sorted array.
 
