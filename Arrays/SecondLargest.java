@@ -1,3 +1,4 @@
+package Arrays;
 public class SecondLargest {
 
     static int secondLargestElement(int[] arr, int n) {
