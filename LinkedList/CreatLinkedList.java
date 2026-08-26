@@ -51,6 +51,10 @@ public class CreatLinkedList {
         }
         System.err.println();
     }
+
+    public void addMidle(int data){
+        
+    }
     public static void main(String[] args) {
         CreatLinkedList ll = new CreatLinkedList();
         ll.print();
